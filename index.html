@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="tr-TR">
+  <head>
+  	<meta charset="utf-8">
+  	<title>BMDTube</title>
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree/Plyr/plyr.css" />
+  </head>
+  <body>
+    </div>
+    </div>
+    <div class="giris" id="giris" style="display: none;">
+      <div class="container">
+      <h2>Giriş Yap</h2>
+      <form>
+        <div class="pc">
+          <input type="text" required="" id="kadi">
+          <span>Kullanıcı Adı</span>
+        </div>
+        <div class="pc">
+          <input type="button" value="Odaya Katıl" onclick="odayaKatıl();"id="buttonenter2" class="form-control btn btn-success"></1>
+        </div>
+      </form>
+    </div>
+    </div>
+    <header id="header">
+      <div class="logo">
+        <img src="bmd neon logo trans.png" height="80px">
+      </div>
+     <div class="input-area">
+          <input type="text" class="form-control" placeholder="Video URL" id="url">
+          <button onclick="play()" class="btn btn-outline-secondary" type="button">&nbsp;Ara&nbsp;</button>
+         <!-- <button class="btn btn-danger" type="button" onclick="history.go(0)">&nbsp;Reset&nbsp;</button>-->
+      </div>
+    </header>
+    <div class="video-player">
+      <div style="width: 760px;" class="plyr__video-embed" id="player">
+      <iframe width="760" height="415" id="iframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; download " allowfullscreen allowtransparency
+      allow="autoplay">
+      </iframe>
+      </div>
+  </div>
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDhyYmH3aZEcQ0BC38F747tjDIbylMokP8",
+    authDomain: "bmdtube.firebaseapp.com",
+    databaseURL: "https://bmdtube-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "bmdtube",
+    storageBucket: "bmdtube.appspot.com",
+    messagingSenderId: "721862641216",
+    appId: "1:721862641216:web:6571a0a6fb09fc7fdb01a5",
+    measurementId: "G-66M5HY30XK"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="https://cdn.jsdelivr.net/gh/CDNSFree/Plyr/plyr.js"></script>
+  </body>
+</html>
